@@ -61,53 +61,5 @@ namespace AofC
                 minY = y;
             }
         }
-
-        private void FindLargestAdd(int target)
-        {
-            int i = 1;
-            int x = 0;
-            int y = 0;
-            int maxX = 0;
-            int maxY = 0;
-            int minX = 0;
-            int minY = 0;
-            while (i < target)
-            {
-                // Right
-                while (x <= maxX)
-                {
-                    x = i;
-                    if (++i == target) return;
-                }
-                maxX = x;
-
-                // Up
-                while (y <= maxY)
-                {
-                    y++;
-                    if (++i == target) return;
-                }
-                maxY = y;
-
-                // Left
-                while (x >= minX)
-                {
-                    x--;
-                    if (++i == target) return;
-                }
-                minX = x;
-
-                // Down
-                while (y >= minY)
-                {
-                    y--;
-                    if (++i == target) return;
-                }
-                minY = y;
-
-            }
-        }
-
-
     }
 }

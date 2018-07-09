@@ -9,6 +9,16 @@ namespace AofC
 {
     class Day2
     {
+        public void Run()
+        {
+            int Day2Solution1 = Part1Solve();
+            int Day2Solution2 = Part2Solve();
+            Console.WriteLine("Day 2:");
+            Console.WriteLine("     Part 1 = " + Day2Solution1);
+            Console.WriteLine("     Part 2 = " + Day2Solution2);
+        }
+
+
         public int Part1Solve()
         {
             string [] readText = File.ReadAllLines(@"C:\Users\lsantiago\source\repos\AofC\AofC\InputFiles\day2input.txt");

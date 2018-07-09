@@ -9,6 +9,17 @@ namespace AofC
     class Day1
     {
         string input = System.IO.File.ReadAllText(@"C:\Users\lsantiago\source\repos\AofC\AofC\InputFiles\day1input.txt");
+
+        public void Run()
+        {
+            int Day1Solution1 = Part1Solve();
+            int Day1Solution2 = Part2Solve();
+            Console.WriteLine("Day 1:");
+            Console.WriteLine("     Part 1 = " + Day1Solution1);
+            Console.WriteLine("     Part 2 = " + Day1Solution2);
+
+        }
+
         public int Part1Solve()
         {
             var inputArray = input.ToCharArray();
