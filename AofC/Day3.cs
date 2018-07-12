@@ -11,11 +11,18 @@ namespace AofC
         public void Run()
         {
             const int target = 312051;
+            int Day5Solution1 = Part1Solve(target);
+            Console.WriteLine("Day 3:");
+            Console.WriteLine("     Part 1: " + Day5Solution1);
+        }
+
+        public int Part1Solve(int target)
+        {
             FindTargetXY(target, out int x, out int y);
             int distanceToCenter = (Math.Abs(x) + Math.Abs(y));
-            Console.WriteLine("Day 3:");
-            Console.WriteLine("     Part 1: " + distanceToCenter);
+            return distanceToCenter;
         }
+
         private void FindTargetXY(int target, out int x, out int y)
         {
             int i = 1;
