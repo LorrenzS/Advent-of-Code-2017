@@ -34,6 +34,9 @@ namespace AofC
             Day7 day7 = new Day7();
             day7.Run();
 
+            Day8 day8 = new Day8();
+            day8.Run();
+
             Console.Write("Press any key to close...");
             Console.ReadKey(true);
 
